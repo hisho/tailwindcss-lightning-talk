@@ -25,6 +25,7 @@
     "next": "13.4.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-use": "^17.4.0",
     "tailwind-merge": "^1.13.2",
     "ts-pattern": "^5.0.1",
     "zod": "^3.21.4"

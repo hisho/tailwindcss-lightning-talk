@@ -1,11 +1,16 @@
 'use client'
 
+import { IntroductionSection } from '@/src/app/(root)/_component/introduction-section'
+import { PresenterSection } from '@/src/app/(root)/_component/presenter-section'
 import { cn } from '@/src/util/cn/cn'
 import { useEffect } from 'react'
 import { useCounter } from 'react-use'
 import { match } from 'ts-pattern'
 
-const slides = [...Array(5)].map((_, i) => i)
+const slides = [
+  <IntroductionSection key={null} />,
+  <PresenterSection key={null} />,
+]
 
 export default function () {
   const [count, { dec, inc }] = useCounter(0, slides.length - 1, 0)
@@ -27,14 +32,14 @@ export default function () {
       }
     >
       <div className={'relative aspect-video w-full'}>
-        {slides.map((value) => (
+        {slides.map((value, index) => (
           <div
             className={cn(
               'absolute inset-0 bg-gray-800',
-              count === value ? 'block' : 'hidden'
+              count === index ? 'block' : 'hidden'
             )}
             style={{
-              zIndex: value + 1,
+              zIndex: index + 1,
             }}
             key={`slide_${value}`}
           >

@@ -14,7 +14,7 @@ const nextConfig = () => {
         : false,
     },
     poweredByHeader: false,
-    reactStrictMode: true,
+    reactStrictMode: false,
   }
 }
 

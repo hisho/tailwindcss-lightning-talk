@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 
 import '@/src/app/app.css'
+import { cn } from '@/src/util/cn/cn'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -19,7 +20,7 @@ export default function ({ children }: Props) {
   return (
     <html>
       <head />
-      <body>{children}</body>
+      <body className={cn('leading-none text-white')}>{children}</body>
     </html>
   )
 }

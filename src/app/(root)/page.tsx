@@ -8,14 +8,14 @@ import { useCounter } from 'react-use'
 import { match } from 'ts-pattern'
 
 const slides = [
-  <IntroductionSection key={null} />,
-  <PresenterSection key={null} />,
+  <IntroductionSection key={'IntroductionSection'} />,
+  <PresenterSection key={'PresenterSection'} />,
 ]
 
 export default function () {
   const [count, { dec, inc }] = useCounter(0, slides.length - 1, 0)
-  const increment = () => inc(0.5)
-  const decrement = () => dec(0.5)
+  const increment = () => inc(1)
+  const decrement = () => dec(1)
   useEffect(() => {
     const keyDownEvent = (e: globalThis.KeyboardEvent) => {
       match(e.key.toLowerCase())
@@ -25,6 +25,7 @@ export default function () {
     }
     window.addEventListener('keydown', keyDownEvent, false)
   }, [])
+
   return (
     <div
       className={
@@ -41,7 +42,7 @@ export default function () {
             style={{
               zIndex: index + 1,
             }}
-            key={`slide_${value}`}
+            key={`slide_${value.key}`}
           >
             {value}
           </div>

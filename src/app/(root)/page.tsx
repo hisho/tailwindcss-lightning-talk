@@ -2,6 +2,7 @@
 
 import { IntroductionSection } from '@/src/app/(root)/_component/introduction-section'
 import { PresenterSection } from '@/src/app/(root)/_component/presenter-section'
+import { Section01 } from '@/src/app/(root)/_component/section-01'
 import { cn } from '@/src/util/cn/cn'
 import { useEffect } from 'react'
 import { useCounter } from 'react-use'
@@ -10,6 +11,7 @@ import { match } from 'ts-pattern'
 const slides = [
   <IntroductionSection key={'IntroductionSection'} />,
   <PresenterSection key={'PresenterSection'} />,
+  <Section01 key={'Section01'} />,
 ]
 
 export default function () {

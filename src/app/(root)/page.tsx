@@ -10,13 +10,16 @@ import { Section01Heading } from '@/src/app/(root)/_component/section-01-heading
 import { Section02Content01 } from '@/src/app/(root)/_component/section-02-content01'
 import { Section02Content02 } from '@/src/app/(root)/_component/section-02-content02'
 import { Section02Heading } from '@/src/app/(root)/_component/section-02-heading'
+import { Section03Content01 } from '@/src/app/(root)/_component/section-03-content01'
 import { Section03Heading } from '@/src/app/(root)/_component/section-03-heading'
+import { Section04Content01 } from '@/src/app/(root)/_component/section-04-content01'
 import { Section04Heading } from '@/src/app/(root)/_component/section-04-heading'
+import { Section05Content01 } from '@/src/app/(root)/_component/section-05-content01'
 import { Section05Heading } from '@/src/app/(root)/_component/section-05-heading'
+import { Section06Content01 } from '@/src/app/(root)/_component/section-06-content01'
 import { Section06Heading } from '@/src/app/(root)/_component/section-06-heading'
 import { Section07Heading } from '@/src/app/(root)/_component/section-07-heading'
 import { Section08Heading } from '@/src/app/(root)/_component/section-08-heading'
-import { Section09Heading } from '@/src/app/(root)/_component/section-09-heading'
 import { cn } from '@/src/util/cn/cn'
 import { useEffect } from 'react'
 import { useCounter } from 'react-use'
@@ -32,12 +35,15 @@ const slides = [
   <IntroductionChatGPT key={'IntroductionChatGPT'} />,
   <PresenterSection key={'PresenterSection'} />,
   <Section03Heading key={'Section03'} />,
+  <Section03Content01 key={'Section03Content01'} />,
   <Section04Heading key={'Section04'} />,
+  <Section04Content01 key={'Section04Content01'} />,
   <Section05Heading key={'Section05'} />,
+  <Section05Content01 key={'Section05Content01'} />,
   <Section06Heading key={'Section06'} />,
+  <Section06Content01 key={'Section06Content01'} />,
   <Section07Heading key={'Section07'} />,
   <Section08Heading key={'Section08'} />,
-  <Section09Heading key={'Section09'} />,
 ]
 
 export default function () {

@@ -1,6 +1,6 @@
 import { NewSection } from '@/src/app/(root)/_template/new-section'
 
-export const Section01 = () => {
+export const Section01Heading = () => {
   return (
     <NewSection
       heading={'⚠一部過激な内容が含まれます⚠'}

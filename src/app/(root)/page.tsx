@@ -1,5 +1,9 @@
 'use client'
 
+import {
+  Introduction,
+  IntroductionChatGPT,
+} from '@/src/app/(root)/_component/introduction'
 import { IntroductionSection } from '@/src/app/(root)/_component/introduction-section'
 import { PresenterSection } from '@/src/app/(root)/_component/presenter-section'
 import { Section01Heading } from '@/src/app/(root)/_component/section-01-heading'
@@ -11,6 +15,8 @@ import { Section06Heading } from '@/src/app/(root)/_component/section-06-heading
 import { Section07Heading } from '@/src/app/(root)/_component/section-07-heading'
 import { Section08Heading } from '@/src/app/(root)/_component/section-08-heading'
 import { Section09Heading } from '@/src/app/(root)/_component/section-09-heading'
+import { Section02Content01 } from '@/src/app/(root)/_component/section02-content01'
+import { Section02Content02 } from '@/src/app/(root)/_component/section02-content02'
 import { cn } from '@/src/util/cn/cn'
 import { useEffect } from 'react'
 import { useCounter } from 'react-use'
@@ -18,9 +24,13 @@ import { match } from 'ts-pattern'
 
 const slides = [
   <IntroductionSection key={'IntroductionSection'} />,
-  <PresenterSection key={'PresenterSection'} />,
   <Section01Heading key={'Section01'} />,
   <Section02Heading key={'Section02'} />,
+  <Section02Content01 key={'Section02Content01'} />,
+  <Section02Content02 key={'Section02Content01'} />,
+  <Introduction key={'Introduction'} />,
+  <IntroductionChatGPT key={'IntroductionChatGPT'} />,
+  <PresenterSection key={'PresenterSection'} />,
   <Section03Heading key={'Section03'} />,
   <Section04Heading key={'Section04'} />,
   <Section05Heading key={'Section05'} />,

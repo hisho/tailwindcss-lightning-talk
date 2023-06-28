@@ -1,15 +1,28 @@
+import { Heading, HeadingTag } from '@/src/app/_component/heading'
 import { Section } from '@/src/component/section/section'
-import { createFontSize } from '@/src/util/createFontSize/createFontSize'
-import { ComponentProps } from 'react'
+import { ComponentProps, ReactNode } from 'react'
 
-type Props = { heading?: string } & Pick<ComponentProps<'h1'>, 'children'>
+type Props = {
+  heading?: ReactNode
+  headingClassName?: string
+  headingLevel?: HeadingTag
+} & Pick<ComponentProps<'div'>, 'children'>
 
-export const NewSection = ({ children, heading }: Props) => {
+export const NewSection = ({
+  children,
+  heading,
+  headingClassName,
+  headingLevel,
+}: Props) => {
   return (
     <Section>
       <div className={'flex h-full items-center justify-center'}>
-        {heading && <h1 style={createFontSize(80)}>{heading}</h1>}
-        <div>{children}</div>
+        {heading && (
+          <Heading as={headingLevel ?? 'h1'} className={headingClassName}>
+            {heading}
+          </Heading>
+        )}
+        <>{children}</>
       </div>
     </Section>
   )

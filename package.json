@@ -29,6 +29,7 @@
     "react-use": "^17.4.0",
     "tailwind-merge": "^1.13.2",
     "ts-pattern": "^5.0.1",
+    "typesafe-utils": "^1.16.2",
     "zod": "^3.21.4"
   },
   "devDependencies": {

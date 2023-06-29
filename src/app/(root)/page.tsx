@@ -112,7 +112,7 @@ export default function () {
           <div
             className={cn(
               'absolute inset-0 bg-gray-800',
-              count === index ? 'block' : 'hidden'
+              count === index ? 'visible' : 'invisible'
             )}
             style={{
               zIndex: index + 1,

@@ -34,10 +34,9 @@ import { Section05Heading } from '@/src/app/(root)/_component/section-05-heading
 import { Section06Content01 } from '@/src/app/(root)/_component/section-06-content01'
 import { Section06Content02 } from '@/src/app/(root)/_component/section-06-content02'
 import { Section06Content03 } from '@/src/app/(root)/_component/section-06-content03'
+import { Section06Content04 } from '@/src/app/(root)/_component/section-06-content04'
 import { Section06Heading } from '@/src/app/(root)/_component/section-06-heading'
-import { Section07Content01 } from '@/src/app/(root)/_component/section-07-content01'
 import { Section07Heading } from '@/src/app/(root)/_component/section-07-heading'
-import { Section08Heading } from '@/src/app/(root)/_component/section-08-heading'
 import { cn } from '@/src/util/cn/cn'
 import { useEffect } from 'react'
 import { useCounter } from 'react-use'
@@ -84,9 +83,8 @@ const slides = [
   <Section06Content01 key={'Section06Content01'} />,
   <Section06Content02 key={'Section06Content02'} />,
   <Section06Content03 key={'Section06Content03'} />,
+  <Section06Content04 key={'Section06Content04'} />,
   <Section07Heading key={'Section07'} />,
-  <Section07Content01 key={'Section07Content01'} />,
-  <Section08Heading key={'Section08'} />,
 ]
 
 export default function () {

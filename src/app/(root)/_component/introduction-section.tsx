@@ -6,7 +6,7 @@ export const IntroductionSection = () => {
       heading={
         <>
           <strong className={'text-sky-400'}>スタイリングの風</strong> :
-          <span className={'text-gray-300'}>クラス名の断捨離へ</span>
+          クラス名の<span className={'text-red-400'}>断捨離</span>へ
         </>
       }
     />

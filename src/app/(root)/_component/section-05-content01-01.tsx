@@ -1,6 +1,6 @@
 import { NewSection } from '@/src/app/(root)/_template/new-section'
 
-export const Section02Content02 = () => {
+export const Section05Content0101 = () => {
   return (
     <NewSection
       heading={
@@ -11,9 +11,9 @@ export const Section02Content02 = () => {
             <strong className={'text-red-400'}>flex</strong>
           </span>
           <span className={'block'} style={{ marginTop: '2%' }}>
-            <strong className={'text-red-400'}>padding-top: 1rem;</strong>
+            <strong className={'text-red-400'}>width: 16px;</strong>
             &nbsp;=&nbsp;
-            <strong className={'text-red-400'}>pt-4</strong>
+            <strong className={'text-red-400'}>w-4</strong>
           </span>
         </span>
       }

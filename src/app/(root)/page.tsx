@@ -23,8 +23,17 @@ import { Section04Content0107 } from '@/src/app/(root)/_component/section-04-con
 import { Section04Content0108 } from '@/src/app/(root)/_component/section-04-content01-08'
 import { Section04Heading } from '@/src/app/(root)/_component/section-04-heading'
 import { Section05Content01 } from '@/src/app/(root)/_component/section-05-content01'
+import { Section05Content0101 } from '@/src/app/(root)/_component/section-05-content01-01'
+import { Section05Content0201 } from '@/src/app/(root)/_component/section-05-content02-01'
+import { Section05Content0202 } from '@/src/app/(root)/_component/section-05-content02-02'
+import { Section05Content0301 } from '@/src/app/(root)/_component/section-05-content03-01'
+import { Section05Content0302 } from '@/src/app/(root)/_component/section-05-content03-02'
+import { Section05Content0401 } from '@/src/app/(root)/_component/section-05-content04-01'
+import { Section05Content0402 } from '@/src/app/(root)/_component/section-05-content04-02'
 import { Section05Heading } from '@/src/app/(root)/_component/section-05-heading'
 import { Section06Content01 } from '@/src/app/(root)/_component/section-06-content01'
+import { Section06Content02 } from '@/src/app/(root)/_component/section-06-content02'
+import { Section06Content03 } from '@/src/app/(root)/_component/section-06-content03'
 import { Section06Heading } from '@/src/app/(root)/_component/section-06-heading'
 import { Section07Content01 } from '@/src/app/(root)/_component/section-07-content01'
 import { Section07Heading } from '@/src/app/(root)/_component/section-07-heading'
@@ -60,8 +69,21 @@ const slides = [
   <Section04Content0108 key={'Section04Content0108'} />,
   <Section05Heading key={'Section05'} />,
   <Section05Content01 key={'Section05Content01'} />,
+  <Section05Content01 highlightIndex={0} key={'Section05Content010'} />,
+  <Section05Content0101 key={'Section05Content0101'} />,
+  <Section05Content01 highlightIndex={1} key={'Section05Content011'} />,
+  <Section05Content0201 key={'Section05Content0201'} />,
+  <Section05Content0202 key={'Section05Content0202'} />,
+  <Section05Content01 highlightIndex={2} key={'Section05Content012'} />,
+  <Section05Content0301 key={'Section05Content0301'} />,
+  <Section05Content0302 key={'Section05Content0302'} />,
+  <Section05Content01 highlightIndex={3} key={'Section05Content013'} />,
+  <Section05Content0401 key={'Section05Content0401'} />,
+  <Section05Content0402 key={'Section05Content0402'} />,
   <Section06Heading key={'Section06'} />,
   <Section06Content01 key={'Section06Content01'} />,
+  <Section06Content02 key={'Section06Content02'} />,
+  <Section06Content03 key={'Section06Content03'} />,
   <Section07Heading key={'Section07'} />,
   <Section07Content01 key={'Section07Content01'} />,
   <Section08Heading key={'Section08'} />,

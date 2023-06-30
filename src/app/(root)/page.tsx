@@ -1,6 +1,11 @@
 'use client'
 
 import {
+  Closing1,
+  Closing2,
+  Closing3,
+} from '@/src/app/(root)/_component/closing'
+import {
   Introduction,
   IntroductionChatGPT,
 } from '@/src/app/(root)/_component/introduction'
@@ -84,6 +89,9 @@ const slides = [
   <Section06Content02 key={'Section06Content02'} />,
   <Section06Content03 key={'Section06Content03'} />,
   <Section06Content04 key={'Section06Content04'} />,
+  <Closing1 key={'Closing1'} />,
+  <Closing2 key={'Closing2'} />,
+  <Closing3 key={'Closing3'} />,
   <Section07Heading key={'Section07'} />,
 ]
 

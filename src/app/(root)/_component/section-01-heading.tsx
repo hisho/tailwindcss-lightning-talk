@@ -9,3 +9,12 @@ export const Section01Heading = () => {
     />
   )
 }
+
+export const Section01Heading01 = () => {
+  return (
+    <NewSection
+      heading={'tailwind cssはご存知ですか？🙋‍♂️'}
+      headingLevel={'h2'}
+    />
+  )
+}

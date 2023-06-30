@@ -11,7 +11,10 @@ import {
 } from '@/src/app/(root)/_component/introduction'
 import { IntroductionSection } from '@/src/app/(root)/_component/introduction-section'
 import { PresenterSection } from '@/src/app/(root)/_component/presenter-section'
-import { Section01Heading } from '@/src/app/(root)/_component/section-01-heading'
+import {
+  Section01Heading,
+  Section01Heading01,
+} from '@/src/app/(root)/_component/section-01-heading'
 import { Section02Content01 } from '@/src/app/(root)/_component/section-02-content01'
 import { Section02Content02 } from '@/src/app/(root)/_component/section-02-content02'
 import { Section02Heading } from '@/src/app/(root)/_component/section-02-heading'
@@ -50,6 +53,7 @@ import { match } from 'ts-pattern'
 const slides = [
   <IntroductionSection key={'IntroductionSection'} />,
   <Section01Heading key={'Section01'} />,
+  <Section01Heading01 key={'Section01Heading01'} />,
   <Section02Heading key={'Section02'} />,
   <Section02Content01 key={'Section02Content01'} />,
   <Section02Content02 key={'Section02Content01'} />,
